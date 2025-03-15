@@ -1,1 +1,52 @@
-/*  your css code here. If applicable */
+/* Container for the hero section */
+.hero {
+  display: flex;                 /* 1: Enable flex layout */
+  justify-content: space-between;/* 2: Distribute space between items */
+  align-items: center;           /* 3: Vertically center items */
+  padding: 20px;                 /* Add some spacing */
+  background-color: #f5f5f5;     /* Optional background color */
+}
+
+/* The hero image */
+.hero img {
+  width: 600px;      /* Required: set a width */
+  height: 400px;     /* Required: set a height */
+  object-fit: cover; /* Required: ensure the image covers its container */
+  border-radius: 8px;/* Optional: slightly rounded corners */
+}
+
+/* Text content next to the image */
+.hero-content {
+  max-width: 400px;  /* Constrain text width for better readability */
+  margin-left: 20px; /* Space between image and text */
+}
+
+/* Heading styles */
+.hero-content h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Paragraph styles */
+.hero-content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* "Explore Now" button/link styles */
+.explore-btn {
+  display: inline-block;
+  padding: 10px 20px;      /* Required: add padding */
+  background-color: #e60023; /* A Pinterest-like red color */
+  color: #fff;             /* Required: text color */
+  text-decoration: none;   /* Remove default link underline */
+  border-radius: 5px;      /* Required: rounded corners */
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the button (optional) */
+.explore-btn:hover {
+  background-color: #c2001f;
+}
